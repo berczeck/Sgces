@@ -39,5 +39,6 @@
     <modules>
     	<module>modelo</module>
     	<module>web</module>
-    </modules>
+    	<module>escritorio</module>
+  </modules>
 </project>
