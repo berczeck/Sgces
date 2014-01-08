@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema Gestion de EESS - Inicio Sesión</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<div class="container">
+		<form role="form" class="form-singin" id="formInicioSesion">
+			<h2 class="form-sigin-heading">Por favor Inicie Sesión</h2>
+			<input type="email" class="form-control" placeholder="Correo Electronico" required="true" autofocus="true">
+			<input type="password" class="form-control" placeholder="Password" required="true">
+			<label class="checkbox">
+				<input type="checkbox" value="recuerdame"> Recuerdame
+			</label>
+			<button id="iniciarSesion" class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
+		</form>
+	</div>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#iniciarSesion').click(function(evt){			
+			evt.preventDefault();
+			window.location.href = "index.html";	
+		});
+	});
+	</script>
+</body>
+</html>
