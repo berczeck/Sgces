@@ -1,10 +1,9 @@
-html,body{height:100%}
-footer{height:60px;background-color:#f5f5f5;color:#22bce0;}
+html,body{font-family:'Lato';font-weight:300;height:100%}
+footer{bottom:0;height:60px;background-color:#f5f5f5;color:#22bce0;position:fixed;width:100%;padding:0 30px;}
 footer .texto{margin:20px 0}
-footer .container{width:auto;max-width:680px;padding:0 15px}
 form{padding:.8em;display:none;}
 form label{display:inline-block;width:60px}
-header{background:#634e8f;box-shadow:0 5px 0 rgba(0,0,0,0.2);color:#fff;padding:.5em;position:relative;overflow:hidden;z-index:2;}
+header{background:#428bca;box-shadow:0 5px 0 rgba(0,0,0,0.2);color:#fff;padding:.5em;position:relative;overflow:hidden;z-index:2;}
 header h1{font-size:18px;font-weight:normal;padding:0;margin:0}
 header .logo{border-right:1px solid #22bce0;float:left;width:60px;}
 header .logo figure{border:1px dashed #bbb;height:52px;width:52px}
@@ -14,6 +13,9 @@ nav:before{border-bottom:20px solid transparent;border-left:6px solid #fff;borde
 nav .menu{height:40px;line-height:40px;margin:0;padding:0;overflow-x:auto;white-space:nowrap;}
 nav .menu::-webkit-scrollbar{display:none}
 nav .menu li{display:inline-block;}
-nav .menu li a{color:#fff;display:block;margin:0 .5em;padding:0 .08em;text-decoration:none;}
+nav .menu li:first-child{margin:0 0 0 .5em}
+nav .menu li a{color:#fff;display:block;padding:0 .7em;transition:.2s background linear;text-decoration:none;}
 nav .menu li a:hover{background:rgba(0,0,0,0.1)}
 section{margin-right:0;margin-left:0;height:auto;margin:0 auto -60px;padding:0 0 60px}
+.col-lg-3{padding-left:3px !important;margin-top:-18px}
+.container{margin-left:0 !important;margin-top:50px !important}

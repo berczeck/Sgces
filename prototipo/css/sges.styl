@@ -5,20 +5,22 @@ azul = #22BCE0
 
 html
 body
+	font-family 'Lato'
+	font-weight 300
 	height 100%
 
 footer
+	bottom 0
 	height 60px
 	background-color gris_claro
 	color azul
+	position fixed
+	width 100%
+	padding 0 30px
 
 	.texto
 		margin 20px 0
 
-	.container
-		width auto
-		max-width 680px
-		padding 0 15px
 
 form
 	padding 0.8em
@@ -29,7 +31,7 @@ form
 		width 60px
 
 header
-	background #634E8F
+	background #428bca
 	box-shadow 0 5px 0 rgba(0,0,0,0.2)
 	color white
 	padding 0.5em
@@ -87,14 +89,19 @@ nav
 		li
 			display inline-block
 
+			&:first-child
+				margin 0 0 0 .5em
+
 			a
 				color white
 				display block
-				margin 0 0.5em
-				padding 0 0.08em
+				/*margin 0 0.5em*/
+				padding 0 0.7em
+				transition 0.2s background linear
 				text-decoration none
 				&:hover
 					background rgba(black, 0.1)
+
 
 section
 	margin-right 0px
@@ -102,3 +109,11 @@ section
 	height auto
 	margin 0 auto -60px
 	padding 0 0 60px
+
+.col-lg-3
+	padding-left 3px !important
+	margin-top -18px
+
+.container
+	margin-left 0 !important
+	margin-top 50px !important
